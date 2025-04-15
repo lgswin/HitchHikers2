@@ -9,11 +9,19 @@
       "UnauthRoleName": "amplify-hitchhikers2-dev-c848e-unauthRole",
       "StackName": "amplify-hitchhikers2-dev-c848e",
       "StackId": "arn:aws:cloudformation:us-east-1:180227528520:stack/amplify-hitchhikers2-dev-c848e/0c2eb940-1a06-11f0-842e-0e2a5d7821b3",
-      "AmplifyAppId": "d1brkemooqe9dj"
+      "AmplifyAppId": "d1brkemooqe9dj",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-hitchhikers2-dev-c848e-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
+      "function": {
+        "hitchhikers2726060d6PostConfirmation": {
+          "GROUP": "PASSENGER",
+          "deploymentBucketName": "amplify-hitchhikers2-dev-c848e-deployment",
+          "s3Key": "amplify-builds/hitchhikers2726060d6PostConfirmation-386231674b592b777258-build.zip"
+        }
+      },
       "auth": {
-        "hitchhikers2726060d6": {}
+        "hitchhikers220b9721a": {}
       },
       "api": {
         "hitchhikers2": {}

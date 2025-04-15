@@ -7,7 +7,7 @@
             "UserPoolId"
           ],
           "category": "auth",
-          "resourceName": "hitchhikers2726060d6"
+          "resourceName": "hitchhikers220b9721a"
         }
       ],
       "output": {
@@ -16,7 +16,7 @@
             {
               "authenticationType": "AMAZON_COGNITO_USER_POOLS",
               "userPoolConfig": {
-                "userPoolId": "authhitchhikers2726060d6"
+                "userPoolId": "authhitchhikers220b9721a"
               }
             }
           ],
@@ -33,7 +33,7 @@
     }
   },
   "auth": {
-    "hitchhikers2726060d6": {
+    "hitchhikers220b9721a": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -58,6 +58,39 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "hitchhikers2726060d6PostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_hitchhikers2726060d6PostConfirmation_GROUP": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hitchhikers2726060d6PostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_hitchhikers2726060d6PostConfirmation_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hitchhikers2726060d6PostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_hitchhikers2726060d6PostConfirmation_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hitchhikers2726060d6PostConfirmation"
+        }
+      ]
     }
   }
 }
